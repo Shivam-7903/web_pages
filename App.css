@@ -1,0 +1,95 @@
+
+*{
+  background-color:  rgb(230, 230, 233);
+}
+.head{
+   display: flex;
+   justify-content: flex-end;
+   /* width: 78%; */
+}
+.head div{
+  margin: 20px;
+}
+.description{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 350px;
+}
+.description h1{
+  margin: 0px;
+}
+
+ p{
+  font-size: small;
+  color:rgb(137, 135, 135);
+  font-weight:500;
+ 
+}
+.description div{
+  width: fit-content;
+}
+.Button {
+  display: flex;
+  gap: 5px;
+}
+.input #email{
+   height: 40px;
+   border-radius: 7px;
+   border: 0px;
+   font-size: small;
+  color:rgb(137, 135, 135);
+  font-weight:550;
+  background-color: rgb(220, 220, 220);
+  width: 180px;
+}
+.button{
+  height: 40px;
+  border-radius: 7px;
+  border: 0px;
+  font-size:small ;
+  color:rgb(236, 238, 239);
+  font-weight: 700;
+  background-color: rgb(58, 139, 251);
+  width: 125px;
+}
+.middle{
+  width: 200px;
+  /* display: flex; */
+}
+.middleflex{
+  display: flex;
+  justify-content:center;
+
+  margin-left: 20em;
+  gap: 100px;
+}
+.left_des{
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row-reverse; */
+  /* margin-left: 370px; */
+}
+.logo{
+  display: flex;
+  justify-content: center;
+}
+.logo i{
+  width: 50px;
+}
+.text{
+  text-align: center;
+
+}
+.full-des{
+  display: flex;
+  justify-content: center;
+  gap: 6em;
+  margin: 4em;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  gap: 40%;
+}
