@@ -1,64 +1,43 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/header.jsx';
-import Description from'./components/description.jsx';
-import contents from './object/content.jsx';
-import Middle from './components/middle.jsx';
-import context from'./object/context.jsx';
-import context2 from'./object/context2.jsx';
+import  Header from "./components/header.jsx"
+import Middle1 from "./components/middle_title.jsx"
+import Middle2 from"./components/middle2.jsx"
+import Middle_part3 from "./components/middle_part3.jsx"
+import Content from "./object/content.jsx"
+import LowerMiddle from "./components/lower-middle.jsx"
 
-
-function Context_mapping(item){
-   return(
-      <Middle
-       logo={item.logo}
-       h3={item.h3}
-       about={item.about} />
-   );
+function contentMapping(Content){
+  return (
+    <Middle_part3
+      key={Content.id}
+      image={Content.img}
+      image2={Content.img2}
+      about={Content.about}
+      about2={Content.about2}
+    />
+  );
 }
-
-
 
 
 function App() {
   return (
-   <div>
-    
-    <Header/>
-     <Description
-     
-    img={contents[0].img}
-    des={contents[0].des}
-    h1={contents[0].h}
-    /> 
+    <div className="App" >
+          
+         <Header />  
+         <Middle1 /> 
+         <Middle2 />
 
+         <div  class="heading">
+         <h1>Why Choose Us</h1>
+         </div>
 
-   <div class="middleflex">
-      {context.map(Context_mapping)}
+         <div class="middle-flex">
+        {Content.map(contentMapping)}
+           </div>
+          <LowerMiddle/>
+          
     </div>
-
-
-    <div class="left_des">
-      <Description
-       
-    des={contents[1].des}
-    h1={contents[1].h}
-    /> </div>
-
-
-    <div class="middleflex">
-       {context2.map(Context_mapping)}
-    </div>
-
-
-
-    <Description
-    des={contents[2].des}
-    h={contents[2].h}
-    h1={contents[2].h1}
-    h2={contents[2].h2}
-    /> 
-   </div>
   );
 }
 
